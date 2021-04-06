@@ -123,11 +123,6 @@ class DataPreprocess:
 
 
 
-file_path='D:/workspace of spyder/毕业设计/my project/datafile./wgEncodeAwgTfbsUtaGlioblaCtcfUniPk.csv'
 
-DP=DataPreprocess(file_path)
-df=DP.GetSequencesPositionsWithLength(101,'tempfile.csv')
-#df2=DP.get_FixedLength_background_seq_positions(10000, 101, 'tempbackground.csv')
-df3=DP.Get_seq_positions_with_seq_strength(2000, 101, 750, 1000, 'test_750_1000.csv')
 
 

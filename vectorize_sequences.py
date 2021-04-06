@@ -41,8 +41,8 @@ class Vector_sequence:
                     temp[i][j][3]=0.25      
         np.save(file_name_dot_npy,temp)
         return temp
-file_path='D:/workspace of spyder/毕业设计/my project/datafile/DNd41_background_seq.csv'
-VS1=Vector_sequence(file_path)
-df=VS1.get_sequences()
-digital_seq=VS1.get_digital_sequences('temp.npy')
+# file_path='D:/workspace of spyder/毕业设计/my project/datafile/DNd41_background_seq.csv'
+# VS1=Vector_sequence(file_path)
+# df=VS1.get_sequences()
+# digital_seq=VS1.get_digital_sequences('temp.npy')
 
