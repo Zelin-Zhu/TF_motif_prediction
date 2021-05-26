@@ -7,9 +7,6 @@ Created on Wed Mar 31 11:44:19 2021
 import tensorflow as tf
 import numpy as np
 
-loaded_model = tf.keras.models.load_model('D:/workspace of spyder/毕业设计/my project data/model_file/Binary_classification_DNd41.h5')
-seqs_750_1000=np.load("D:/workspace of spyder/毕业设计/my project data/datafile/DND41/DNd41_750_1000.npy")
-predicts=loaded_model.predict(seqs_750_1000)
 
 
 class Motif_Search:
@@ -122,8 +119,8 @@ class Motif_Search:
         print('100.0%')
         np.save(motif_file_name_dot_npy,motifs)
         return motifs
-MS=Motif_Search(loaded_model, seqs_750_1000)
-motif=MS.find_motif_all('D:/workspace of spyder/毕业设计/my project data/datafile/DND41/DNd41_motifs_seqs_750_1000.npy')
+# MS=Motif_Search(loaded_model, seqs_750_1000)
+# motif=MS.find_motif_all('D:/workspace of spyder/毕业设计/my project data/datafile/DND41/DNd41_motifs_seqs_750_1000.npy')
   
 #test=np.load('D:/workspace of spyder/毕业设计/DNd41_motifs_seqs_750_1000.npy')
            
